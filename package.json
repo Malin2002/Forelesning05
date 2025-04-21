@@ -6,8 +6,9 @@
   "scripts": {
     "test": "tsc --noEmit && prettier --check .",
     "dev": "vite",
-    "build": "vite build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:schools:import": "docker exec -i /postgis /usr/bin/psql --user postgres < tmp/Befolkning_0000_Norge_25833_Grunnskoler_PostGIS.sql",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
