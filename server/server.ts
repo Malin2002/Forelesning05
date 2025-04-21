@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+import { Context, Hono } from "hono";
 import { serve } from "@hono/node-server";
 import pg from "pg";
 
@@ -7,10 +7,10 @@ const postgresql = new pg.Pool({
 });
 
 const app = new Hono();
-app.get("/", async (c) => {
+app.get("/", async (c: Context) => {
   return c.text("Hello World");
 });
-app.get("/Forelesning05/api/skoler", async (c) => {
+app.get("/Forelesning05/api/skoler", async (c: Context) => {
   const result = await postgresql.query(
     `select 
     skolenavn, 
