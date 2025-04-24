@@ -18,13 +18,13 @@
   "devDependencies": {
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
+    "download-cli": "^1.1.1",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "vite": "^6.2.3"
   },
   "dependencies": {
-    "download-cli": "^1.1.1",
     "ol": "^10.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
